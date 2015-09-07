@@ -35,8 +35,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="GW2Context.cs" />
+    <Compile Include="GW2Link.cs" />
+    <Compile Include="MapType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MumbleLink-CSharp\MumbleLink-CSharp\MumbleLink-CSharp.csproj">
+      <Project>{f7d52e49-75c2-4578-820f-1b03e5e05e4f}</Project>
+      <Name>MumbleLink-CSharp</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
