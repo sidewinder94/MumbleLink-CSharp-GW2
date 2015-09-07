@@ -1,0 +1,3 @@
+[submodule "MumbleLink-CSharp"]
+	path = MumbleLink-CSharp
+	url = https://github.com/sidewinder94/MumbleLink-CSharp.git

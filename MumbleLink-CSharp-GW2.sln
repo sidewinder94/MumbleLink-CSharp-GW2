@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MumbleLink-CSharp-GW2", "MumbleLink-CSharp-GW2\MumbleLink-CSharp-GW2.csproj", "{8A8D6DC7-81E3-4140-A6AB-25545220311C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MumbleLink-CSharp", "MumbleLink-CSharp\MumbleLink-CSharp\MumbleLink-CSharp.csproj", "{F7D52E49-75C2-4578-820F-1B03E5E05E4F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8A8D6DC7-81E3-4140-A6AB-25545220311C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A8D6DC7-81E3-4140-A6AB-25545220311C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A8D6DC7-81E3-4140-A6AB-25545220311C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A8D6DC7-81E3-4140-A6AB-25545220311C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7D52E49-75C2-4578-820F-1B03E5E05E4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7D52E49-75C2-4578-820F-1B03E5E05E4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7D52E49-75C2-4578-820F-1B03E5E05E4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7D52E49-75C2-4578-820F-1B03E5E05E4F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
