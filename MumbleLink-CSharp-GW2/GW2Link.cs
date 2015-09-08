@@ -8,11 +8,11 @@ namespace MumbleLink_CSharp_GW2
 {
     public class GW2Link : MumbleLink
     {
-        private const float MeterToInch = 39.3701f;
+        private const double MeterToInch = 39.3700787d;
 
         public struct Coordinates
         {
-            public float X, Y, Z;
+            public double X, Y, Z;
             public int WorldId;
             public int MapId;
         }
