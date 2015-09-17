@@ -3,7 +3,7 @@ Specialized MumbleLink library for use with GuildWars 2
 
 ##Example Usage 
 
-```
+```C#
 var link = new GW2Link();//No parameters needed
 MumbleLinkedMemory data = link.Read();//We got the default MumbleLink Struct, useful for position/rotation
 GW2Context = link.GetContext();//We're extracting the Context field from the default MumbleLink Struct for easy usage (contains : MapId, MapType, ShardId, Instance and Build)
