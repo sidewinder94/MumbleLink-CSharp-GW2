@@ -1,4 +1,5 @@
-﻿using System.Runtime.InteropServices;
+﻿using System;
+using System.Runtime.InteropServices;
 using System.Text;
 
 namespace MumbleLink_CSharp_GW2
@@ -20,7 +21,7 @@ namespace MumbleLink_CSharp_GW2
         public override string ToString()
         {
             var str = new StringBuilder();
-
+            var t = Enum.Parse(typeof(GW2Race), 1.ToString());
             str.Append("Server Address : [");
             for (int i = 0; i < ServerAddress.Length; i++)
             {

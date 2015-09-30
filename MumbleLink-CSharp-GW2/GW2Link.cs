@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using System.Text;
 using MumbleLink_CSharp;
+using Newtonsoft.Json;
 
 namespace MumbleLink_CSharp_GW2
 {
@@ -61,5 +62,15 @@ namespace MumbleLink_CSharp_GW2
             };
             return coord;
         }
+
+        /// <summary>
+        /// Returns the parsed Identitty Field
+        /// </summary>
+        /// <returns>GW2Identity Instance if succeeded, null if not</returns>
+        public GW2Identity GetIdentity()
+        {
+            return JsonConvert.DeserializeObject<GW2Identity>(new String(Read().Identity));
+        }
+
     }
 }

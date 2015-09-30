@@ -36,14 +36,21 @@
     <AssemblyOriginatorKeyFile>MumbleLink-CSharp-GW2.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\Documents\Visual Studio 2013\Projects\GW2MumbleLinkTest\packages\Newtonsoft.Json.7.0.1\lib\net20\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GW2Context.cs" />
+    <Compile Include="GW2Identity.cs" />
     <Compile Include="GW2Link.cs" />
+    <Compile Include="GW2Race.cs" />
     <Compile Include="MapType.cs" />
+    <Compile Include="GW2Profession.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -54,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="MumbleLink-CSharp-GW2.snk" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
