@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Newtonsoft.Json;
 
 namespace MumbleLink_CSharp_GW2
 {
@@ -16,6 +17,7 @@ namespace MumbleLink_CSharp_GW2
         public Boolean IsCommander;
         public float Fov;
 
+        [JsonConstructor]
         public GW2Identity(string name, GW2Profession profession, GW2Race race, int map_id, int world_id, int team_color_id, bool commander, float fov)
         {
             Name = name;

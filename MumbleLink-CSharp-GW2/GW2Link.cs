@@ -69,7 +69,17 @@ namespace MumbleLink_CSharp_GW2
         /// <returns>GW2Identity Instance if succeeded, null if not</returns>
         public GW2Identity GetIdentity()
         {
-            return JsonConvert.DeserializeObject<GW2Identity>(new String(Read().Identity));
+            var identity = Read().Identity;
+
+            var stop = Array.IndexOf(Read().Identity, '\0');
+
+            unsafe
+            {
+                fixed (char* addr = identity)
+                {
+                    return JsonConvert.DeserializeObject<GW2Identity>(new String(addr));//Needs to use the array in char* form because when it changes size, GW2 does not clean all of the array, it just put \0 after the content
+                }
+            }
         }
 
     }
