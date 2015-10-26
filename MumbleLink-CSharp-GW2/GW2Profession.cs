@@ -13,6 +13,7 @@ namespace MumbleLink_CSharp_GW2
         Thief = 5,
         Elementalist = 6,
         Mesmer = 7,
-        Necromancer = 8
+        Necromancer = 8,
+        Revenant = 9
     }
 }
